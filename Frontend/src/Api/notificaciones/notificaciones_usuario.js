@@ -16,7 +16,7 @@ export async function getNotificacion() {
   try {
     const options = genOptionsWithoutBody("GET");
     const response = await fetch(
-      `${urlApi}/api/notifications/`,
+      `${urlApi}/api/notifications`,
       options
     );
     const data = await response.json();
